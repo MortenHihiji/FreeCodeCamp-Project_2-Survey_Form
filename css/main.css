@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 1.4;
+    color: var(--color-white);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    background-image: linear-gradient(
+    115deg,
+    rgba(52, 52, 150, .8),
+    rgba(136, 136, 200, .7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 20px 250px 0px 300px;
+}
+
+#header {
+    text-align: center;
+}
+
+#title {
+    margin-bottom: 0px;
+}
+
+#text {
+    font-style: italic;
+    margin-top: 3px;
+}
+
+#survey-form {
+    padding: 10px 40px 30px 40px;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 45, 78, .9);
+}
+
+.form-group {
+    display: block;
+    padding-top: 20px;
+}
+
+#name, #email, #number, #dropdown, #fav {
+    padding: 5px 0px 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    height: 36px;
+    
+    border: 1px solid #eee;
+    
+    outline: 0;
+    transition: box-shadow 0.15s;
+}
+
+input::-webkit-input-placeholder {
+    opacity: .75;
+}
+
+#name:focus, #email:focus, #number:focus, #dropdown:focus, #fav:focus {
+    box-shadow: 0px 0px 0px 4px rgba(27, 58, 116, 1);
+}
+
+
+.input-radio, .input-checkbox {
+    margin-top: 11px;
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+#p-suggestions {
+    margin-bottom: 5px;
+}
+
+#textarea-suggestions {
+    font-size: 14px;
+    padding: 5px 0px 5px 10px;
+    width: 100%;
+    height: 90px;
+}
+
+#submit {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(55, 175, 101, 1);
+    width: 100%;
+    height: 46px;
+    
+    border: 1px solid #37AF65;
+}
